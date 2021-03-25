@@ -1,0 +1,146 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #EABEB0;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-family: "Optima";
+  color: #385526;
+}
+
+#logo {
+    font-size: 40px;
+    line-height: 1;
+    padding: 40px 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    border-bottom: 1px solid #EABEB0;
+    background-color: #385526;
+    color: #EABEB0;
+}
+
+h1{
+  font-size: 40px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+  color: #385526;
+}
+
+h2{
+  font-size: 28px;
+}
+
+nav li{
+  color: #EABEB0;
+  display:block;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #EABEB0;
+  
+}
+
+nav{
+  background-color: #385526;
+  text-align: left;
+}
+
+footer{
+  background-color: #385526;
+  color: #EABEB0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+  color: #385526;
+}
+
+nav a{
+  color: #EABEB0;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 7px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -50px;
+}
+
+.skip a:focus {
+  position: absolute;
+  top: 10px;
+}
+
+*:focus{
+  border: 1px solid #385526;
+}
+
+#hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 375px;
+  height: auto;
+}
+
+#current {
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+figure {
+  display: grid;
+}
+
+figcaption {
+  padding-top: 20px;
+}
+
+#product-image {
+  width: 350px;
+  height: auto;
+}
+
+#product-name {
+  font-size: 25px;
+  padding-bottom: 30px;
+  font-weight: bold;
+
+}
+

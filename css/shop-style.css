@@ -1,0 +1,202 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #EABEB0;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-family: "Optima";
+  color: #385526;
+}
+
+#logo {
+    font-size: 40px;
+    line-height: 1;
+    padding: 40px 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    border-bottom: 1px solid #EABEB0;
+    background-color: #385526;
+    color: #EABEB0;
+}
+
+h1{
+  font-size: 40px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+  color: #385526;
+}
+
+h2{
+  font-size: 28px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+p{
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 22px;
+}
+
+nav li{
+  color: #EABEB0;
+  display:block;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #EABEB0;
+  
+}
+
+nav{
+  background-color: #385526;
+  text-align: left;
+}
+
+footer{
+  background-color: #385526;
+  color: #EABEB0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+  color: #385526;
+}
+
+nav a{
+  color: #EABEB0;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+#back-to-top {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 7px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -50px;
+}
+
+.skip a:focus {
+  position: absolute;
+  top: 10px;
+}
+
+*:focus{
+  border: 1px solid #385526;
+}
+
+#hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 375px;
+  height: auto;
+}
+
+#current {
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+figure {
+  display: grid;
+}
+
+figcaption {
+  line-height: 1.2;
+}
+
+#product-image {
+  width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#product-name {
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+#sold-out {
+  color: #CA3604;
+}
+
+button {
+  background-color: #385526;
+  color: #EABEB0;
+  font-family: "Optima";
+  font-size: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+
+#null-button {
+  background-color: #385526;
+  color: gray;
+  font-family: "Optima";
+  font-size: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+a:link {
+  color: #EABEB0;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #EABEB0;
+  text-decoration: none;
+}
