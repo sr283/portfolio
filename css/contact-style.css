@@ -132,12 +132,12 @@ figcaption {
   padding-top: 20px;
 }
 
-#product-image {
+.container img {
   width: 350px;
   height: auto;
 }
 
-#product-name {
+.container figcaption:nth-child(1) {
   font-size: 25px;
   padding-bottom: 30px;
   font-weight: bold;
