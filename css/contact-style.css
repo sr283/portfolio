@@ -38,12 +38,17 @@ h2{
 
 nav li{
   color: #EABEB0;
-  display:block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #EABEB0;
-  
+}
+
+#current {
+  color: #385526;
+  background: #EABEB0;
 }
 
 nav{
@@ -108,9 +113,6 @@ a:hover, a:focus {
   height: auto;
 }
 
-#current {
-  color: white;
-}
 
 .container {
   display: grid;
@@ -141,6 +143,17 @@ figcaption {
   font-size: 25px;
   padding-bottom: 30px;
   font-weight: bold;
+
+}
+
+@media all and (min-width: 880px){
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
 
 }
 

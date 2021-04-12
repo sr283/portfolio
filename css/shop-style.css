@@ -46,12 +46,18 @@ h2{
 
 nav li{
   color: #EABEB0;
-  display:block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #EABEB0;
   
+}
+
+#current {
+  color: #385526;
+  background: #EABEB0;
 }
 
 nav{
@@ -134,10 +140,6 @@ a:hover, a:focus {
   height: auto;
 }
 
-#current {
-  color: white;
-}
-
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -211,3 +213,25 @@ a:visited {
   text-decoration: none;
 }
 
+@media all and (min-width: 880px){
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+
+}

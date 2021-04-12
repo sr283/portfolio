@@ -42,12 +42,18 @@ h2{
 
 nav li{
   color: #EABEB0;
-  display:block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #EABEB0;
   
+}
+
+#current {
+  color: #385526;
+  background: #EABEB0;
 }
 
 nav{
@@ -61,6 +67,7 @@ nav a{
   text-decoration: none;
 
 }
+
 
 p {
   padding-left: 15px;
@@ -172,9 +179,7 @@ a:hover, a:focus {
   height: auto;
 }
 
-#current {
-  color: white;
-}
+
 
 .cost {
   min-height: 500px;
@@ -207,6 +212,7 @@ justify-content: center;
 
 .plan li{
   text-align: center;
+  list-style: none;
 }
 
 .plan > header {
@@ -245,4 +251,23 @@ text-align: center;
   margin: 10px;
   filter: grayscale(1);
   transform: rotate(0.05turn)
+}
+
+@media all and (min-width: 880px){
+  
+  img {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+
 }
