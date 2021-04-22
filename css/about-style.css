@@ -95,6 +95,7 @@ a:hover, a:focus {
   z-index: 1;
   position: absolute;
   top: -50px;
+  color: #385526;
 }
 
 .skip a:focus {
@@ -156,3 +157,14 @@ figcaption {
   }
 
 }
+
+/* Reduced Motion */
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+  .skip a{
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  }

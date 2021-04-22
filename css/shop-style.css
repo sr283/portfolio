@@ -35,7 +35,8 @@ h1{
 h2{
   font-size: 28px;
   line-height: 1.5;
-  padding: 10px;
+  padding: 30px;
+  text-align: center;
 }
 
 #notice{
@@ -112,22 +113,6 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-.skip a{
-  background: white;
-  left: 0;
-  padding: 7px;
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
-  z-index: 1;
-  position: absolute;
-  top: -50px;
-}
-
-.skip a:focus {
-  position: absolute;
-  top: 10px;
-}
-
 *:focus{
   border: 1px solid #385526;
 }
@@ -152,11 +137,11 @@ a:hover, a:focus {
   text-align: center;
 }
 
-figure {
+/* figure {
   display: grid;
-}
+} */
 
-figcaption {
+.container > figcaption {
   line-height: 1.2;
 }
 
@@ -191,7 +176,7 @@ button {
 
 }
 
-#null-button {
+/* #null-button {
   background-color: #385526;
   color: gray;
   font-family: "Optima";
@@ -201,7 +186,7 @@ button {
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 15px;
-}
+} */
 
 a:link {
   color: #EABEB0;
@@ -213,7 +198,24 @@ a:visited {
   text-decoration: none;
 }
 
-@media all and (min-width: 880px){
+.skip a{
+  background: white;
+  left: 0;
+  padding: 7px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -50px;
+  color: #385526;
+}
+
+.skip a:focus {
+  position: absolute;
+  top: 10px;
+}
+
+@media all and (min-width: 760px){
   
   .container {
     display: grid;
@@ -227,11 +229,43 @@ a:visited {
     text-align: center;
   }
 
+
+  .navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+
+@media all and (min-width: 990px){
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+
   .navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 
-
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+  .skip a{
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  }

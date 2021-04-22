@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/about-style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact-style.css">
     <link href='https://fonts.googleapis.com/css?family=Optima' rel='stylesheet'>
     <title>FLOWERWORKS</title>
   </head>
@@ -14,7 +14,7 @@
     <nav>
         <h1 id="logo"></a>FLOWERWORKS</h1>
         <ul class="navigation">
-          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="exhibit.html">Exhibit</a></li>
@@ -47,7 +47,7 @@
 
       <figure>
         <figcaption>Venice</figcaption>
-        <img src="images/venice.jpeg" alt="Venice"/>
+        <img src="images/shop_venice.jpg" alt="Venice"/>
         <figcaption>445 Abbott Kinney Blvd<br>
         Venice, CA 90292</figcaption>
         <figcaption>(384) 957-2283</figcaption>
@@ -62,8 +62,145 @@
       </figure>
 
       <figure>
-        <figcaption id="product-name">(Contact Form Coming Soon)</figcaption>
+        <figcaption>Hollywood</figcaption>
+        <img src="images/shop_hollywood.jpg" alt="Hollywood"/>
+        <figcaption>201 Vine St<br>
+        Hollywood, CA 90027</figcaption>
+        <figcaption>(384) 354-8274</figcaption>
+        <figcaption>Store Hours:<br>
+          Mon 10am - 5pm<br>
+          Tues 10am - 5pm<br>
+          Wed 10am - 5pm<br>
+          Thurs 10am - 5pm<br>
+          Fri 10am - 7pm<br>
+          Sat 12pm - 6pm<br>
+          Sun Closed</figcaption>
       </figure>
+    </div>
+
+    <div> 
+      <h2>Shop</h2><br><br>
+
+      <form
+        action="https://formspree.io/f/xeqvoqor"
+        method="POST">
+        
+        <!-- <label>
+          Your email:
+          <input type="email" name="_replyto">
+        </label>
+
+        <label>Choose a Form: </label>
+        <select name="Choose a Form">
+          <option value="contact">Contact the Team</option>
+          <option value="shop">Buy Products</option>
+        </select> -->
+
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fname">First Name*</label>
+          <input required type="text" id="fname" name="fname">
+          <label for="lname">Last Name*</label>
+          <input required type="text" id="lname" name="lname">
+          <label for="email">Email*</label>
+          <input required type="text" id="email" name="email">
+          <label for="phone">Phone*</label>
+          <input required type="text" id="phone" name="phone">
+        </fieldset><br>
+
+        <br><fieldset class="products">
+          <legend>Pick Your Products</legend>
+          <label class="seasonal product-subtitle">Seasonal Bouquets:</label><br>
+          <input class = "check seasonal" type="checkbox" id="golden" name="golden">
+          <label class = "check seasonal" for="golden">Golden Hour</label>
+          <input class = "check seasonal" type="checkbox" id="pollen" name="pollen">
+          <label class = "check seasonal" for="pollen">Pollen Power</label>
+          <input class = "check seasonal" type="checkbox" id="verdant" name="verdant">
+          <label class = "check seasonal" for="verdant">Verdant Hills</label><br>
+
+          <br><label class="luxury product-subtitle">Luxury Arrangements:</label><br>
+          <input class = "check luxury" type="checkbox" id="fireworks" name="fireworks">
+          <label class = "check luxury" for="fireworks">Fireworks</label><br>
+
+          <br><label class="ceramics product-subtitle">Ceramics:</label><br>
+          <input class = "check" type="checkbox" id="cerulean" name="cerulean">
+          <label class = "check" for="cerulean">The Cerulean</label>
+          <input class = "check" type="checkbox" id="sky" name="sky">
+          <label class = "check" for="sky">Sky</label><br>
+
+          <br><label class="product-subtitle">Subscriptions:</label><br>
+          <input class = "check" type="checkbox" id="moseason" name="moseason">
+          <label class = "check" for="moseason">Monthly Seasonal</label>
+          <input class = "check" type="checkbox" id="moluxe" name="moluxe">
+          <label class = "check" for="moluxe">Monthly Luxe</label>
+          <input class = "check" type="checkbox" id="anse" name="anse">
+          <label class = "check" for="anse">Annual Seasonal</label>
+          <input class = "check" type="checkbox" id="anlux" name="anlux">
+          <label class = "check" for="anlux">Annual Luxe</label><br>
+        </fieldset><br>
+
+
+        <br><fieldset>
+          <legend>Shipping (Ignore for Pickup)</legend>
+          <label for="sfname">First Name</label>
+          <input type="text" id="sfname" name="sfname">
+          <label for="slname">Last Name</label>
+          <input type="text" id="slname" name="slname">
+          <label for="street">Street Address</label>
+          <input type="text" id="street" name="street">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city">
+          <label for="state">State</label>
+          <input type="text" id="state" name="state">
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" name="zip">
+        </fieldset><br>
+
+        <br><fieldset>
+          <legend>Payment</legend>
+          <label for="cardname">Name on Card*</label>
+          <input required type="text" id="cardname" name="cardname">
+          <label for="card">Card Number*</label>
+          <input required type="text" id="card" name="card"><br>
+          <label for="date">Expiration Date*</label>
+          <input required type="text" id="date" name="date">
+          <label for="cvv">CVV*</label>
+          <input required type="text" id="cvv" name="cvv">
+        </fieldset><br><br>
+
+        <!-- <label>Seasonal Bouquets</label>
+        <select name="Choose a Form">
+          <option value="fireworks">Fireworks</option>
+          <option value="shop">Buy Products</option>
+        </select> -->
+
+
+        <button type="submit">Submit Order</button>
+      </form>
+
+      <h2>Contact</h2><br><br>
+
+      <form
+        action="https://formspree.io/f/xeqvoqor"
+        method="POST">
+
+        <fieldset>
+          <label for="cfname">First Name*</label>
+          <input required type="text" id="cfname" name="cfname">
+          <label for="clname">Last Name*</label>
+          <input required type="text" id="clname" name="clname">
+          <label for="cemail">Email*</label>
+          <input required type="text" id="cemail" name="cemail">
+          <label for="subject">Subject*</label> 
+          <input required type="text" id="subject" name="subject">
+          <label for="message">Message*</label>
+          <input class = "message" required type="text" id="message" name="message">
+        </fieldset><br>
+
+        <button type="submit">Send</button>
+      </form>
+
+    </div>
 
   </main>
     <footer>
