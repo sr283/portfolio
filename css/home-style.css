@@ -347,8 +347,6 @@ a:hover, a:focus {
     grid-template-columns: 1fr 1fr;
   }
 
-  /* Tablet Exhibit */
-
   .exhibit {
     min-height: 500px;
     display: flex;
