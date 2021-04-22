@@ -151,14 +151,6 @@ a:visited {
   text-decoration: none;
 }
 
-/* header p{
-  color: white;
-  font-size: 25px;
-  padding: 0 50px;
-  text-align: center;
-  color: #385526;
-} */
-
 img {
   width: 320px;
   height: auto;
@@ -287,11 +279,6 @@ a:hover, a:focus {
   margin-bottom: 40px;
 }
 
-/* .exhibit > img:first-child {
-  margin: 10px;
-  filter: grayscale(1);
-  transform: rotate(-0.05turn)
-} */
 
 .exhibit > img:nth-child(odd) {
   margin: 10px;
@@ -455,6 +442,16 @@ a:hover, a:focus {
   .skip a{
     -webkit-transition: none;
     transition: none;
+  }
+
+  header {
+    background-image: url("../images/spring_narrow.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 
   }
